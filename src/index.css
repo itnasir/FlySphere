@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a2a6b;
+  --color-deep: #07173d;
+  --color-royal: #0b50c0;
+  --color-cta: #e3262b;
+  --color-cta-hover: #c51b20;
+  --color-cta-light: #ff4b4f;
+  --color-page: #f5f7fc;
+  --color-admin: #f3f5fa;
+  --color-tint: #eef2fa;
+  --color-line: #e4e9f4;
+  --color-field: #e1e7f3;
+  --color-field-strong: #d5ddee;
+  --color-ink: #0e1a33;
+  --color-muted: #5b6784;
+  --color-subtle: #8a95ae;
+  --color-on-navy: #c9d4ee;
+  --color-on-navy-2: #a9b8dc;
+  --color-on-navy-3: #8fa0c8;
+  --color-ok: #127a45;
+  --color-ok-bg: #e6f6ee;
+  --color-bad: #b3261e;
+  --color-bad-bg: #fdecec;
+  --color-warn: #9a5b00;
+  --color-warn-bg: #fff4e0;
+  --color-wa: #1fa463;
+
+  --font-display: "Archivo", "Hind Siliguri", system-ui, sans-serif;
+  --font-sans: "DM Sans", "Hind Siliguri", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-book: 0 24px 64px -16px rgba(7, 23, 61, 0.16), 0 4px 16px -4px rgba(7, 23, 61, 0.06);
+  --shadow-card: 0 12px 32px -8px rgba(10, 42, 107, 0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: var(--color-page);
+  }
+
+  html[lang="bn"] {
+    font-family: "Hind Siliguri", "DM Sans", system-ui, sans-serif;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-royal);
+    outline-offset: 2px;
+  }
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding-inline: 16px;
+  }
+}
+
+.display {
+  font-family: var(--font-display);
+  font-stretch: 110%;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.6vw, 44px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  font-stretch: 110%;
+}
+
+html[lang="bn"] .section-title {
+  font-family: "Hind Siliguri", "Archivo", system-ui, sans-serif;
+  letter-spacing: 0;
+  font-stretch: normal;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-cta);
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color-cta);
+  border-radius: 2px;
+}
+
+.eyebrow-dark {
+  color: #ff6b6e;
+}
+
+.eyebrow-dark::before {
+  background-color: #ff6b6e;
+}
+
+html[lang="bn"] .eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom range slider for Cost Calculator & Flight Price Filter */
+input[type="range"].lusan-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"].lusan-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: var(--color-cta);
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 23, 61, 0.28);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].lusan-range::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type="range"].lusan-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: var(--color-cta);
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 23, 61, 0.28);
+  cursor: pointer;
+}
+
+/* Scroll reveal animation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mobile bottom bar padding */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+}
