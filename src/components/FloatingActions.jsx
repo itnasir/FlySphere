@@ -21,7 +21,7 @@ export default function FloatingActions() {
     <>
       {/* Desktop WhatsApp Pill */}
       <a
-        href="https://wa.me/8801312772233"
+        href="https://wa.me/8801937866936"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
@@ -34,7 +34,7 @@ export default function FloatingActions() {
       {/* Mobile Fixed Bottom Sticky Bar (<768px) */}
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-line px-3 py-2.5 flex items-center gap-2 shadow-[0_-8px_24px_rgba(7,23,61,0.08)]">
         <a
-          href="tel:+8801312772233"
+          href="tel:+8801937866936"
           className="flex-1 h-11 rounded-[10px] border border-field-strong bg-page text-ink font-bold text-[13.5px] flex items-center justify-center gap-1.5"
         >
           <Phone className="w-4 h-4 text-navy" />
@@ -42,7 +42,7 @@ export default function FloatingActions() {
         </a>
 
         <a
-          href="https://wa.me/8801312772233"
+          href="https://wa.me/8801937866936"
           target="_blank"
           rel="noreferrer"
           className="flex-1 h-11 rounded-[10px] bg-wa text-white font-bold text-[13.5px] flex items-center justify-center gap-1.5"
