@@ -73,8 +73,8 @@ export default function ContactSection() {
             <div className="bg-white rounded-[18px] border border-line p-6 sm:p-7">
               <div className="pb-4 mb-5 border-b border-line">
                 <h3 className="display text-[22px] sm:text-[24px] font-extrabold tracking-tight">
-                  <span className="text-navy">MAHMUDUL</span>{' '}
-                  <span className="text-cta">HASAN</span>
+                  <span className="text-navy">FlySphere</span>{' '}
+                  <span className="text-cta">BD</span>
                 </h3>
                 <p className="text-[14px] font-semibold text-muted mt-0.5">
                   {lang === 'bn' ? 'ব্যবস্থাপনা পরিচালক' : 'Managing Director'}
@@ -88,13 +88,13 @@ export default function ContactSection() {
                   </span>
                   <div>
                     <span className="block text-[12px] font-bold uppercase tracking-wider text-muted">
-                      WhatsApp &amp; Viber
+                      WhatsApp
                     </span>
                     <a
-                      href="tel:+8801312772233"
+                      href="tel:+8801937866936"
                       className="text-[15.5px] font-bold text-ink hover:text-royal transition-colors"
                     >
-                      +880 1312-772233
+                      +880 1937 866936
                     </a>
                   </div>
                 </div>
@@ -108,10 +108,10 @@ export default function ContactSection() {
                       Email
                     </span>
                     <a
-                      href="mailto:info@lusantravelsbd.com"
+                      href="mailto:Flyspherebd26@gmail.com"
                       className="text-[15.5px] font-bold text-ink hover:text-royal transition-colors"
                     >
-                      info@lusantravelsbd.com
+                      Flyspherebd26@gmail.com
                     </a>
                   </div>
                 </div>
@@ -125,15 +125,15 @@ export default function ContactSection() {
                       Office address
                     </span>
                     <p className="text-[15px] font-semibold text-ink leading-snug">
-                      2nd Floor, House #105, Road #4, Block #B, Banani, Dhaka-1213
+                      98/6, Sky View Tower, Atish Dipankar Road, Khilgaon, Dhaka-1219
                     </p>
                     <a
-                      href="https://maps.google.com/?q=House+105,+Road+4,+Block+B,+Banani,+Dhaka+1213"
+                      href="https://maps.google.com/?q=98%2F6,+Sky+View+Tower,+Atish+Dipankar+Road,+Khilgaon+(South+Basabo),+Dhaka-1214"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-1 text-[13.5px] font-bold text-royal hover:text-cta mt-1"
                     >
-                      <span>Next to Gulshan · Get directions</span>
+                      <span>Next to Khilgaon · Get directions</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -144,8 +144,8 @@ export default function ContactSection() {
             {/* Embedded Google Map */}
             <div className="flex-1 min-h-[240px] rounded-[18px] overflow-hidden border border-line bg-tint">
               <iframe
-                title="Lusan Travels Office Map — Banani, Dhaka"
-                src="https://www.google.com/maps?q=House+105,+Road+4,+Block+B,+Banani,+Dhaka+1213&output=embed"
+                title="FlySphere BD Travel & Tours Office Map — Khilgaon, Dhaka"
+                src="https://www.google.com/maps?q=98%2F6,+Sky+View+Tower,+Atish+Dipankar+Road,+Khilgaon+(South+Basabo),+Dhaka-1214&output=embed"
                 className="w-full h-full min-h-[240px] border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
