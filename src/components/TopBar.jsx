@@ -9,7 +9,7 @@ export default function TopBar() {
       <div className="wrap flex items-center justify-between py-2 gap-4">
         <div className="flex items-center gap-4 flex-wrap">
           <a
-            href="tel:+8801312772233"
+            href="tel:+8801937866936"
             className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
           >
             <Phone className="w-3.5 h-3.5 text-cta-light" />
@@ -19,11 +19,11 @@ export default function TopBar() {
             ·
           </span>
           <a
-            href="mailto:info@lusantravelsbd.com"
+            href="mailto:Flyspherebd26@gmail.com"
             className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
           >
             <Mail className="w-3.5 h-3.5 text-cta-light" />
-            <span>info@lusantravelsbd.com</span>
+            <span>Flyspherebd26@gmail.com</span>
           </a>
         </div>
         <div className="inline-flex items-center gap-1.5 text-on-navy-2">
