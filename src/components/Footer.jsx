@@ -135,20 +135,20 @@ export default function Footer() {
               Office
             </h4>
             <p className="text-[14px] text-on-navy leading-relaxed mb-2.5">
-              2nd Floor, House #105, Road #4, Block #B, Banani, Dhaka-1213
+              98/6, Sky View Tower, Atish Dipankar Road, Khilgaon (South Basabo), Dhaka-1214
             </p>
             <a
-              href="tel:+8801312772233"
+              href="tel:+8801937866936"
               className="inline-block text-[14.5px] font-bold text-white hover:text-cta-light transition-colors"
             >
-              +880 1312-772233
+              +880 1937 866936
             </a>
           </div>
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[13px] text-on-navy-3">
-          <p>© 2026 Lusan Travels. All rights reserved.</p>
-          <p>Banani, Dhaka · Sat–Thu 10:00–19:00</p>
+          <p>© 2026 FlySphere BD Travel & Tours. All Rights Reserved.</p>
+          <p>Khilgaon, Dhaka · Sat–Thu 10:00–19:00</p>
         </div>
       </div>
     </footer>
