@@ -616,8 +616,8 @@ export function generateFlights(fromCode, toCode, dateStr, cabin = 'Economy') {
 
 export const COPY = {
   en: {
-    topContact: 'WhatsApp & Viber: +880 1312-772233',
-    topHours: 'Banani (next to Gulshan), Dhaka-1213 · Sat–Thu 10:00–19:00',
+    topContact: 'WhatsApp: +8801937866936',
+    topHours: 'Khilgaon, Dhaka-1219 · Sat–Thu 10:00–19:00',
     nav: {
       home: 'Home',
       services: 'Services',
