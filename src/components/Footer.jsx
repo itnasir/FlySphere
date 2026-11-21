@@ -108,24 +108,8 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/account"
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
-                >
-                  Customer login
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/admin"
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
-                >
-                  Staff login
-                </Link>
-              </li>
+              
+              
             </ul>
           </div>
 
