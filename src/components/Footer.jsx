@@ -101,11 +101,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/agent"
+                  to="/#services"
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="hover:text-white transition-colors"
                 >
-                  Agent portal
+                  Services
                 </Link>
               </li>
               <li>
